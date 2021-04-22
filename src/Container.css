@@ -1,0 +1,13 @@
+.App {
+  border: 2px solid grey;
+  background-image: url("https://inews-prd-a-images.s3.eu-west-2.amazonaws.com/content/uploads/2019/10/shutterstock_1479789158.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  border-radius: 30px;
+  padding: 80px 40px 100px;
+  margin: 10px auto;
+  box-shadow: 5px 5px 5px #000000;
+  max-width: 700px;
+}

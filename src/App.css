@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body {
+  font-family: "Merriweather", serif;
   color: white;
+  text-shadow: 2px 2px 2px #000000;
+}
+ul {
+  padding: 0;
+  margin: 0;
 }
 
-.App-link {
-  color: #61dafb;
+li {
+  font-size: 16px;
+  list-style: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h3 {
+  font-size: 23px;
+  margin-bottom: 30px;
+}
+h6 {
+  text-align: center;
+  font-size: 15px;
+}
+
+.card-body {
+  border: 2px solid grey;
+  box-shadow: 5px 5px 10px #000000;
+  padding-bottom: 20px;
+}
+
+.today {
+  background: rgb(234, 191, 159, 40%);
+  margin-bottom: 30px;
+}
+
+.this-week {
+  background: rgb(234, 191, 159, 40%);
+  display: block;
+}
+
+.temperature {
+  font-size: 80px;
+  font-weight: bolder;
+  line-height: 1;
+}
+
+.units {
+  position: relative;
+  font-size: 16px;
+  top: -45px;
+  text-decoration: none;
+}
+
+.fa-map-marker-alt {
+  color: red;
+  font-size: 35px;
+}
+.fa-clock {
+  color: blue;
+}
+
+.location-input {
+  margin-bottom: 30px;
+}
+.weather-temperature img {
+  float: left;
+}
+
+.weather-temperature .active {
+  color: rgb(33, 33, 33);
+  cursor: default;
+  text-decoration: none;
+}
+
+.weather-temperature .active:hover {
+  text-decoration: none;
+}
+
+.weather-forecast {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.weather-forecast img {
+  display: block;
+  margin: 0 auto;
+  height: 60px;
+  width: 60px;
+}
+
+.weather-forecast-temperature {
+  text-align: center;
+  font-size: 14px;
+}
+
+.weather-forecast h3 {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  height: 5px;
+  padding: 5px;
 }
