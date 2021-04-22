@@ -1,11 +1,10 @@
-import React from "react";
 import "./App.css";
 import SearchForm from "./SearchForm";
 import MainBody from "./MainBody";
 import Forecast from "./Forecast";
 import Footer from "./Footer";
 
-export default function App() {
+function App() {
   return (
     <div className="App">
       <SearchForm />
@@ -15,3 +14,5 @@ export default function App() {
     </div>
   );
 }
+
+export default App;
