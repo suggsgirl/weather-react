@@ -16,7 +16,7 @@ export default function MainBody() {
             <div className="clearfix weather-temperature">
               <img
                 src="http://openweathermap.org/img/wn/02d@2x.png"
-                alt=""
+                alt="Cloudy"
                 id="icon"
                 class="float-left"
               />
@@ -26,14 +26,7 @@ export default function MainBody() {
                   15{" "}
                 </span>
                 <span class="units">
-                  <a href="#" id="celsius-link" class="active">
-                    °C{" "}
-                  </a>{" "}
-                  |{" "}
-                  <a href="#" id="fahrenheit-link">
-                    {" "}
-                    °F
-                  </a>{" "}
+                    °C |°F
                 </span>
               </div>
             </div>
