@@ -7,7 +7,7 @@ export default function App() {
   return (
     <div className="App">
       <SearchForm />
-      <MainBody />
+      <MainBody defaultCity="Paris"/>
       <Footer />
     </div>
   );
