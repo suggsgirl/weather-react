@@ -3,7 +3,7 @@ import SearchForm from "./SearchForm";
 import MainBody from "./MainBody";
 import Footer from "./Footer";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
       <SearchForm />
@@ -13,4 +13,4 @@ function App() {
   );
 }
 
-export default App;
+
