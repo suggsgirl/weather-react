@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import FormattedDate from "./FormattedDate"; 
 
 export default function MainBody(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -13,7 +14,7 @@ export default function MainBody(props) {
       iconUrl: `http://openweathermap.org/img/wn/02d@2x.png`,
       wind: response.data.wind.speed,
       city: response.data.name,
-      date: "Thursday 1 Apr 14:59",
+      date: new Date(response.data.dt * 1000),
     });
   }
   if (weatherData.ready) {
@@ -26,7 +27,10 @@ export default function MainBody(props) {
             <span>{weatherData.city}</span>{" "}
           </h1>
           <h3>
-            <i className="far fa-clock"></i> <span>{weatherData.date} </span>
+            <i className="far fa-clock"></i>{" "}
+            <span>
+              <FormattedDate date={weatherData.date} />
+            </span>
           </h3>
           <div className="row">
             <div className="col-7">
