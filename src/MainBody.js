@@ -25,9 +25,7 @@ export default function MainBody() {
                   {" "}
                   15{" "}
                 </span>
-                <span class="units">
-                    °C |°F
-                </span>
+                <span class="units">°C |°F</span>
               </div>
             </div>
           </div>
