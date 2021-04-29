@@ -21,7 +21,7 @@ export default function WeatherInfo(props) {
             <div className="col-7">
               <div className="clearfix weather-temperature">
                 <img
-                  src="http://openweathermap.org/img/wn/02d@2x.png"
+                  src={props.data.iconUrl}
                   alt="Cloudy"
                   id="icon"
                   class="float-left"
