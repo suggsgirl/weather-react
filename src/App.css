@@ -42,12 +42,14 @@ h6 {
   font-size: 80px;
   font-weight: bolder;
   line-height: 1;
+  padding-left: 10px; 
 }
 
 .units {
   position: relative;
   font-size: 16px;
   top: -45px;
+  left: -20px; 
   text-decoration: none;
 }
 
@@ -61,9 +63,6 @@ h6 {
 
 .location-input {
   margin-bottom: 30px;
-}
-.weather-temperature img {
-  float: left;
 }
 
 .weather-temperature .active {
