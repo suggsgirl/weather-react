@@ -24,7 +24,7 @@ h6 {
 
 .card-body {
   border: 2px solid grey;
-  box-shadow: 5px 5px 10px #000000;
+  box-shadow: 3px 3px 10px #000000;
   padding-bottom: 20px;
 }
 
@@ -33,22 +33,17 @@ h6 {
   margin-bottom: 30px;
 }
 
-.this-week {
-  background: rgb(234, 191, 159, 40%);
-  display: block;
-}
-
 .temperature {
   font-size: 80px;
   font-weight: bolder;
   line-height: 1;
-  padding-left: 10px; 
+  padding-left: 10px;
 }
 
 .units {
   position: relative;
   font-size: 16px;
-  top: -45px; 
+  top: -45px;
   text-decoration: none;
 }
 
@@ -72,29 +67,4 @@ h6 {
 
 .weather-temperature .active:hover {
   text-decoration: none;
-}
-
-.weather-forecast {
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-.weather-forecast img {
-  display: block;
-  margin: 0 auto;
-  height: 60px;
-  width: 60px;
-}
-
-.weather-forecast-temperature {
-  text-align: center;
-  font-size: 14px;
-}
-
-.weather-forecast h3 {
-  font-size: 20px;
-  font-weight: 400;
-  text-align: center;
-  height: 5px;
-  padding: 5px;
 }

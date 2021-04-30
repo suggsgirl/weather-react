@@ -1,0 +1,30 @@
+.weather-forecast-temperature {
+  height: 30px;
+  font-size: 14px; 
+
+}
+
+.Forecast {
+  text-align: center;
+}
+
+.ForecastDay {
+  font-size: 16px;
+  font-weight: 400;
+  height: 35px;
+  padding: 5px;
+}
+
+.this-week {
+  background: rgb(234, 191, 159, 40%);
+  display: block;
+}
+
+.Forecast-temp-max {
+  font-weight: 900;
+}
+
+.Forecast-temp-min {
+  font-weight: 100;
+  opacity: 0.9; 
+}
