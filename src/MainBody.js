@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
-import Forecast from "./Forecast"; 
+import Forecast from "./Forecast";
 
 export default function MainBody(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -10,7 +10,7 @@ export default function MainBody(props) {
   function handleResponse(response) {
     setWeatherData({
       ready: true,
-      coordinates: response.data.coord, 
+      coordinates: response.data.coord,
       temperature: response.data.main.temp,
       humidity: response.data.main.humidity,
       description: response.data.weather[0].description,
@@ -38,23 +38,23 @@ export default function MainBody(props) {
 
   if (weatherData.ready) {
     return (
-      <div className= "weather-form">
-      <div className="location-input">
-        <form id="search-form" onSubmit={handleSubmit}>
-          <input
-            type="search"
-            placeholder="City Name"
-            id="city-input"
-            autoFocus="on"
-            onChange={changeCity}
-          />
-          <button type="submit" class="btn btn-primary">
-            Search
-          </button>
-        </form>
+      <div className="weather-form">
+        <div className="location-input">
+          <form id="search-form" onSubmit={handleSubmit}>
+            <input
+              type="search"
+              placeholder="City Name"
+              id="city-input"
+              autoFocus="on"
+              onChange={changeCity}
+            />
+            <button type="submit" className="btn btn-primary">
+              Search
+            </button>
+          </form>
         </div>
         <WeatherInfo data={weatherData} />
-        <Forecast coordinates={weatherData.coordinates}/>
+        <Forecast coordinates={weatherData.coordinates} />
       </div>
     );
   } else {

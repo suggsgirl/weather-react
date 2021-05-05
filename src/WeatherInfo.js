@@ -1,7 +1,7 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
 import WeatherIcon from "./WeatherIcon";
-import WeatherTemperature from "./WeatherTemperature"; 
+import WeatherTemperature from "./WeatherTemperature";
 
 export default function WeatherInfo(props) {
   return (
@@ -16,25 +16,22 @@ export default function WeatherInfo(props) {
         <h3>
           <i className="far fa-clock"></i>{" "}
           <span>
-            <FormattedDate
-              date={props.data.date}
-            />
+            <FormattedDate date={props.data.date} />
           </span>
         </h3>
         <div className="row">
           <div className="col-7">
             <div className="clearfix weather-temperature">
               <div className="float-left">
-                <WeatherIcon code={props.data.icon} size={80}/>
+                <WeatherIcon code={props.data.icon} size={80} />
               </div>
-             
-              <div className="float-left"> 
-              <WeatherTemperature celsius={props.data.temperature}/> 
-                
+
+              <div className="float-left">
+                <WeatherTemperature celsius={props.data.temperature} />
               </div>
             </div>
           </div>
-          <div class="col-5">
+          <div className="col-5">
             <ul>
               <li className="text-capitalize">{props.data.description}</li>
               <li>Humidity: {props.data.humidity}% </li>
